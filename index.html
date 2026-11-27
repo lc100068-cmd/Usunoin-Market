@@ -177,6 +177,21 @@
     background:linear-gradient(45deg,#F58529,#DD2A7B 55%,#8134AF)}
   .shop .ig[hidden]{display:none}
 
+  /* ===== 出店・協賛の募集 ===== */
+  .join{margin-top:64px;padding:26px 22px;background:var(--surface);border:1px solid var(--line);border-radius:16px}
+  .join h2{margin:0;font-family:var(--mincho);font-weight:900;font-size:24px;letter-spacing:.06em}
+  .join .lead{margin:8px 0 0;font-size:15px}
+  .join .lead b{color:var(--food)}
+  .join-links{display:grid;gap:12px;margin-top:18px}
+  @media(min-width:640px){.join-links{grid-template-columns:1fr 1fr}}
+  .join-links a{--c:var(--food);display:grid;grid-template-columns:1fr auto;align-items:center;gap:4px 12px;padding:16px 18px;border-radius:12px;text-decoration:none;border:1.5px solid var(--c);background:color-mix(in srgb,var(--c) 7%,var(--surface))}
+  .join-links a.sp{--c:var(--exp)}
+  .join-links b{font-size:18px;color:var(--c)}
+  .join-links span{grid-column:1;font-size:13.5px;color:var(--muted);line-height:1.5}
+  .join-links svg{grid-row:1/3;grid-column:2;color:var(--c)}
+  .foot .links{margin-top:18px;font-size:14px}
+  .foot .links a{color:#fff;font-weight:700;margin:0 8px}
+
   /* ===== Footer ===== */
   footer{margin-top:72px;background:var(--kawara);color:#fff;position:relative}
   footer .eave-top{position:absolute;left:0;right:0;top:-14px;height:14px;background:radial-gradient(circle at 50% 100%,var(--kawara) 0 13px,transparent 13.5px) 0 0/28px 14px repeat-x}
@@ -311,6 +326,15 @@
 
     <div class="empty" id="empty">該当する出店者が見つかりませんでした。<br>別のキーワードで探してみてください。</div>
   </main>
+
+  <section class="join" aria-labelledby="join-title">
+    <h2 id="join-title">出店・協賛の募集</h2>
+    <p class="lead">前回は<b>200人以上</b>が来場し、朝倉一円から親子連れの皆さまにお越しいただきました。</p>
+    <div class="join-links">
+      <a href="entry.html"><b>出店希望の方へ</b><span>フォームに入力して、公式LINEに送れます</span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></a>
+      <a class="sp" href="sponsor.html"><b>協賛・広告のご案内</b><span>協賛・チラシやサイトへの広告掲載のご相談</span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></a>
+    </div>
+  </section>
 </div>
 
 <footer>
@@ -320,6 +344,7 @@
     <p>令和8年12月6日（日）10:00〜16:00<br>旧 半田瓦商店跡地</p>
     <p>お問い合わせ：酒井ひとみ</p>
     <a class="call" href="tel:09089180505"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>090-8918-0505 に電話する</a>
+    <p class="links"><a href="entry.html">出店希望</a>｜<a href="sponsor.html">協賛・広告</a></p>
   </div>
 </footer>
 

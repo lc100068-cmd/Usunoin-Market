@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="烏集院マルシェの協賛・広告のご案内。前回は200人以上が来場し、朝倉一円から親子連れが訪れました。">
+<link rel="icon" href="data:,">
+<title>協賛・広告｜烏集院マルシェ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Old+Mincho:wght@600;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F2F3EE; --surface:#FBFBF8; --ink:#2E3840; --muted:#66707A; --kawara:#5F6B75; --line:#D6DBD3;
+    --food:#B8532F; --hand:#4F7F55; --exp:#2F5F8A; --farm:#9A7415; --accent:var(--food);
+    --mincho:"Zen Old Mincho","Hiragino Mincho ProN","Yu Mincho",serif;
+    --gothic:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic UI","Noto Sans JP",system-ui,sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --paper:#1C2125; --surface:#242A2F; --ink:#E9ECE6; --muted:#A3ACB3; --kawara:#8C98A2; --line:#39424A;
+      --food:#E08560; --hand:#86B88B; --exp:#7FA9D3; --farm:#D4AE52; }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--gothic);font-size:16px;line-height:1.75;font-feature-settings:"palt"}
+  a{color:inherit}
+  [hidden]{display:none!important}
+  :focus-visible{outline:3px solid var(--exp);outline-offset:2px;border-radius:4px}
+  .top{background:var(--kawara);color:#fff;position:relative}
+  .top::after{content:"";position:absolute;left:0;right:0;top:100%;height:14px;background:radial-gradient(circle at 50% 0,var(--kawara) 0 13px,transparent 13.5px) 0 0/28px 14px repeat-x}
+  .top-in{max-width:720px;margin:0 auto;padding:14px 20px 18px;display:flex;align-items:center;gap:12px}
+  .top a{color:#fff;text-decoration:none;font-size:14px;font-weight:700;display:inline-flex;align-items:center;gap:4px;min-height:40px}
+  .top .site{margin-left:auto;font-family:var(--mincho);font-weight:900;font-size:17px;letter-spacing:.08em}
+  @media (prefers-color-scheme: dark){.top,.top::after{--kawara:#3B454D}}
+  main{max-width:720px;margin:0 auto;padding:40px 20px 64px}
+  h1{margin:0;font-family:var(--mincho);font-weight:900;font-size:clamp(30px,8vw,42px);line-height:1.25;letter-spacing:.06em}
+  .lead{margin:14px 0 0;font-size:16px}
+  .proof{margin:24px 0 0;display:grid;grid-template-columns:1fr;gap:4px 16px;align-items:center;padding:18px 20px;background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:10px}
+  .proof .big{font-family:var(--mincho);font-weight:900;font-size:40px;line-height:1;color:var(--accent);margin-bottom:6px}
+  @media(min-width:560px){.proof{grid-template-columns:auto 1fr}.proof .big{grid-row:span 2;margin:0}}
+  .proof .big small{font-size:18px;margin-left:2px}
+  .proof p{margin:0;font-size:15px;line-height:1.6}
+  .proof p b{font-size:16px}
+  h2{margin:40px 0 4px;font-family:var(--mincho);font-weight:900;font-size:22px;letter-spacing:.05em}
+  .steps{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:8px;counter-reset:s}
+  .steps li{counter-increment:s;display:grid;grid-template-columns:30px 1fr;gap:10px;align-items:start;font-size:15px}
+  .steps li::before{content:counter(s);width:28px;height:28px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;font-weight:700;font-size:14px}
+  form{margin-top:16px;display:grid;gap:18px}
+  .f label,.f legend{display:block;font-weight:700;font-size:15px;margin-bottom:6px;padding:0}
+  .f .req{display:inline-block;margin-left:6px;font-size:11px;font-weight:700;color:#fff;background:var(--food);border-radius:4px;padding:0 6px;vertical-align:2px}
+  .f .opt{margin-left:6px;font-size:12px;font-weight:500;color:var(--muted)}
+  .f .hint{display:block;font-size:13px;color:var(--muted);font-weight:400;margin-top:-2px;margin-bottom:6px}
+  fieldset.f{border:0;margin:0;padding:0;min-width:0}
+  input[type=text],input[type=tel],input[type=email],textarea,select{width:100%;font:inherit;font-size:16px;color:var(--ink);background:var(--surface);border:1.5px solid var(--line);border-radius:10px;padding:11px 12px}
+  textarea{min-height:96px;resize:vertical}
+  input:focus,textarea:focus,select:focus{outline:none;border-color:var(--ink)}
+  .f.err input,.f.err textarea,.f.err .choices{border-color:var(--food)}
+  .f .msg{display:none;color:var(--food);font-size:13px;font-weight:700;margin-top:4px}
+  .f.err .msg{display:block}
+  .choices{display:flex;flex-wrap:wrap;gap:8px;border:1.5px solid transparent;border-radius:12px}
+  .choices label{display:inline-flex;align-items:center;gap:6px;margin:0;font-weight:500;padding:8px 14px;border:1.5px solid var(--line);border-radius:999px;background:var(--surface);cursor:pointer;min-height:42px}
+  .choices input{accent-color:var(--accent);width:18px;height:18px;margin:0}
+  .choices label:has(input:checked){border-color:var(--accent);background:color-mix(in srgb,var(--accent) 10%,var(--surface))}
+  .btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;min-height:52px;border:0;border-radius:999px;font:inherit;font-weight:700;font-size:17px;cursor:pointer;text-decoration:none}
+  .btn.primary{background:var(--accent);color:#fff}
+  .btn.line{background:#06C755;color:#fff}
+  .btn.ghost{background:transparent;border:1.5px solid var(--line);color:var(--ink)}
+  @media (prefers-color-scheme: dark){.btn.primary{color:#1C2125}}
+  .out{display:none;margin-top:28px;padding:20px;background:var(--surface);border:1.5px solid var(--accent);border-radius:14px}
+  .out.show{display:block}
+  .out h3{margin:0 0 6px;font-size:17px}
+  .out p{margin:0 0 12px;font-size:14px;color:var(--muted)}
+  .out textarea{min-height:240px;font-size:15px;line-height:1.7;background:var(--paper)}
+  .out .row{display:grid;gap:10px;margin-top:12px}
+  .done{display:none;margin-top:10px;text-align:center;font-weight:700;color:var(--hand)}
+  .done.show{display:block}
+  .note{margin-top:14px;font-size:13px;color:var(--muted)}
+  footer{border-top:1px solid var(--line);text-align:center;padding:24px 20px 36px;font-size:14px;color:var(--muted)}
+  footer a{font-weight:700}
+
+:root{--accent:var(--exp)}
+</style>
+</head>
+<body>
+<header class="top"><div class="top-in"><a href="index.html">‹ 出店者一覧へ</a><span class="site">烏集院マルシェ</span></div></header>
+<main>
+  <h1>協賛・広告のご案内</h1>
+  <p class="lead">烏集院マルシェは、地域の皆さまのご協力で開いている手づくりのマルシェです。協賛やチラシ・サイトへの広告掲載で、マルシェを一緒に支えてくださる企業・団体・お店を募集しています。</p>
+  <div class="proof">
+    <span class="big">200<small>人以上</small></span>
+    <p><b>前回は200人以上が来場</b></p>
+    <p>朝倉一円から、親子連れの皆さまにお越しいただいています。</p>
+  </div>
+  <p class="lead">地元の子育て世代や家族連れに、お店や会社の名前を知ってもらう機会になります。掲載方法などは、いただいた内容をもとにご相談させてください。</p>
+  <h2>お問い合わせの流れ</h2>
+  <ol class="steps">
+    <li>下のフォームに必要なことを入力</li>
+    <li>「送る内容をつくる」を押してコピー</li>
+    <li>公式LINEのトークに貼り付けて送信</li>
+  </ol>
+  <h2>協賛・広告のお問い合わせフォーム</h2>
+  <form id="f" novalidate data-title="【烏集院マルシェ　協賛・広告のお問い合わせ】">
+    <div class="f" data-required data-label="会社・団体・店舗名"><label for="org">会社・団体・店舗名<span class="req">必須</span></label><input type="text" id="org" name="org" placeholder="例：株式会社〇〇" autocomplete="organization"><span class="msg">会社・団体・店舗名を入力してください</span></div>
+    <div class="f" data-required data-label="ご担当者のお名前"><label for="name">ご担当者のお名前<span class="req">必須</span></label><input type="text" id="name" name="name" placeholder="例：烏集院 太郎" autocomplete="name"><span class="msg">ご担当者のお名前を入力してください</span></div>
+    <div class="f" data-required data-label="電話番号"><label for="tel">電話番号<span class="req">必須</span></label><input type="tel" id="tel" name="tel" placeholder="例：0946-00-0000" autocomplete="tel"><span class="msg">電話番号を入力してください</span></div>
+    <div class="f" data-label="メールアドレス"><label for="mail">メールアドレス<span class="opt">任意</span></label><input type="email" id="mail" name="mail" placeholder="例：info@example.com" autocomplete="email"><span class="msg">メールアドレスを入力してください</span></div>
+    <fieldset class="f" data-required data-label="ご希望の内容"><legend>ご希望の内容<span class="req">必須</span></legend><span class="hint">いくつでも選べます</span><div class="choices"><label><input type="checkbox" name="kind" value="協賛金">協賛金</label><label><input type="checkbox" name="kind" value="物品・景品の協賛">物品・景品の協賛</label><label><input type="checkbox" name="kind" value="チラシへの広告掲載">チラシへの広告掲載</label><label><input type="checkbox" name="kind" value="サイトへの広告掲載">サイトへの広告掲載</label><label><input type="checkbox" name="kind" value="その他">その他</label></div><input type="text" class="other" aria-label="その他の内容" placeholder="その他を選んだ方は内容を入力" style="margin-top:8px"><span class="msg">ご希望の内容を選んでください</span></fieldset>
+    <div class="f" data-label="内容の詳細・ご予算"><label for="detail">内容の詳細・ご予算<span class="opt">任意</span></label><textarea id="detail" name="detail" placeholder="例：景品としてお米を提供したい／広告の掲載料を知りたい など"></textarea><span class="msg">内容の詳細・ご予算を入力してください</span></div>
+    <div class="f" data-label="ご質問・備考"><label for="memo">ご質問・備考<span class="opt">任意</span></label><textarea id="memo" name="memo" placeholder=""></textarea><span class="msg">ご質問・備考を入力してください</span></div>
+    <button type="submit" class="btn primary">送る内容をつくる</button>
+  </form>
+
+  <section class="out" id="out" aria-live="polite">
+    <h3>送る内容ができました</h3>
+    <p>内容を確認して「コピーする」を押し、公式LINEのトークに貼り付けて送信してください。</p>
+    <textarea id="txt" readonly aria-label="公式LINEに送る内容"></textarea>
+    <div class="row">
+      <button type="button" class="btn primary" id="copyBtn">コピーする</button>
+      <a class="btn line" id="lineBtn" href="#" target="_blank" rel="noopener" hidden>公式LINEを開く</a>
+    </div>
+    <p class="done" id="done">コピーしました。公式LINEのトークに貼り付けてください。</p>
+    <p class="note" id="lineNote">公式LINEのトーク画面を開き、コピーした内容を貼り付けて送信してください。</p>
+  </section>
+  <p class="note">入力した内容はこのページの中だけで使われ、どこにも送信・保存されません。</p>
+</main>
+<footer><a href="index.html">出店者一覧</a>　｜　<a href="entry.html">出店希望の方へ</a></footer>
+<script>
+(function(){
+  var LINE_URL=''; /* 公式LINEのURLが決まったらここに入れる（例：https://lin.ee/xxxx） */
+  var form=document.getElementById('f');
+  var out=document.getElementById('out'), txt=document.getElementById('txt'), done=document.getElementById('done');
+  var lineBtn=document.getElementById('lineBtn'), lineNote=document.getElementById('lineNote');
+  if(LINE_URL){lineBtn.href=LINE_URL;lineBtn.hidden=false;lineNote.hidden=true;}
+  function val(f){
+    var boxes=f.querySelectorAll('input[type=radio],input[type=checkbox]');
+    if(boxes.length){return [].slice.call(boxes).filter(function(b){return b.checked;}).map(function(b){
+      if(b.value==='その他'){var o=f.querySelector('.other');if(o&&o.value.trim())return 'その他（'+o.value.trim()+'）';}
+      return b.value;}).join('、');}
+    var el=f.querySelector('input,textarea,select');return el?el.value.trim():'';
+  }
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var lines=[form.getAttribute('data-title'),''], first=null;
+    [].slice.call(form.querySelectorAll('.f')).forEach(function(f){
+      var v=val(f), req=f.hasAttribute('data-required');
+      f.classList.toggle('err',req&&!v);
+      if(req&&!v&&!first)first=f;
+      if(v){ lines.push('■'+f.getAttribute('data-label')); lines.push(v); lines.push(''); }
+    });
+    if(first){ out.classList.remove('show'); first.scrollIntoView({behavior:'smooth',block:'center'}); var i=first.querySelector('input,textarea'); if(i)i.focus({preventScroll:true}); return; }
+    lines.push('どうぞよろしくお願いいたします。');
+    txt.value=lines.join('\n');
+    out.classList.add('show'); done.classList.remove('show');
+    out.scrollIntoView({behavior:'smooth',block:'start'});
+  });
+  form.addEventListener('input',function(e){var f=e.target.closest('.f'); if(f&&f.classList.contains('err')&&val(f))f.classList.remove('err');});
+  document.getElementById('copyBtn').addEventListener('click',function(){
+    function ok(){done.classList.add('show');}
+    function fallback(){txt.removeAttribute('readonly');txt.select();txt.setSelectionRange(0,txt.value.length);try{document.execCommand('copy');ok();}catch(e){}txt.setAttribute('readonly','');}
+    if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(txt.value).then(ok,fallback);}else{fallback();}
+  });
+})();
+
+</script>
+</body>
+</html>
