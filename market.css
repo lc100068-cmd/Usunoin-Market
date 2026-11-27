@@ -13,3 +13,5 @@ dialog.shop{--c:var(--ink);padding:0;border:0;border-radius:22px;background:#fff
 @media(max-width:359px){.brand{font-size:14px}.site-nav{padding:14px}.wrap{padding-left:16px;padding-right:16px}.row .name{font-size:16px}.cat-head .place{order:3}.hero-actions{gap:8px}.hero-actions .pill{padding:10px 14px}}
 
 @media(max-width:639px){.list-heading .section-title span{display:block}}
+
+.gmap{display:flex;align-items:center;justify-content:center;gap:8px;margin:22px auto 0;max-width:420px;min-height:52px;padding:12px 22px;border-radius:999px;background:var(--kawara);color:#fff;font-weight:700;font-size:16px;text-decoration:none}.gmap:hover{filter:brightness(1.08)}.gmap:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
