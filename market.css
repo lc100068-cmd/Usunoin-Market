@@ -15,3 +15,4 @@ dialog.shop{--c:var(--ink);padding:0;border:0;border-radius:22px;background:#fff
 @media(max-width:639px){.list-heading .section-title span{display:block}}
 
 .gmap{display:flex;align-items:center;justify-content:center;gap:8px;margin:22px auto 0;max-width:420px;min-height:52px;padding:12px 22px;border-radius:999px;background:var(--kawara);color:#fff;font-weight:700;font-size:16px;text-decoration:none}.gmap:hover{filter:brightness(1.08)}.gmap:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.kids-tramp{display:inline-flex;align-items:center;gap:8px;margin:0 0 18px!important;padding:8px 16px;border-radius:999px;background:#ffe08a;color:var(--ink);font-weight:800;font-size:17px;transform:rotate(-1.5deg)}.kids-tramp span{font-size:20px}
